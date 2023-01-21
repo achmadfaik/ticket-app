@@ -86,4 +86,4 @@ Content-Type: application/json
 ### Meta
 
 Achmad Faik Farqui  –
-achmadfaik.alfaruqi@gmail.com
+faik.faruqi@gmail.com
