@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "ef1b0d0a-57af-46f5-b10a-1e26857cac5a",
+		"name": "Ticket API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6760851"
+	},
+	"item": [
+		{
+			"name": "GET INDEX",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "ticket_code",
+							"value": "DTKA60BBA8",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "per_page",
+							"value": "100",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"event_id\": \"1\",\n    \"ticket_code\": \"DTK48A086A\",\n    \"status\": \"claimed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/tickets-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets-update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

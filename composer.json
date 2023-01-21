@@ -1,0 +1,17 @@
+{
+    "name": "faik/detik-test-php",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Lib\\": "lib/",
+            "Database\\": "database/"
+        }
+    },
+    "authors": [
+        {
+            "name": "achmadfaik",
+            "email": "faik.faruqi@gmail.com"
+        }
+    ],
+    "require": {}
+}
